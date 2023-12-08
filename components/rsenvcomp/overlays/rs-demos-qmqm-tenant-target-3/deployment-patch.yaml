@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: rsenvcomp
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rs-demos-qmqm-tenant/rsenvapp/rsenvcomp@sha256:cf88cfd6187b5416cd0077acf60e4f6b8a648d23067f7ca3434183abeab4ea50
+        name: my-java-quarkus
+        resources: {}
+status: {}
